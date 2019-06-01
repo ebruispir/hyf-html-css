@@ -1,15 +1,13 @@
-
-
 body{
     font-size: 22px;
     background: whitesmoke;
  }
+
 nav{
     background-color:#2E8B57;
     text-align:center;
     width: 100%;
-    
-    }
+}
 
 nav a{
 
@@ -18,21 +16,21 @@ nav a{
     padding: 16px 16px;
     font-size: 22px;
     text-transform: uppercase;
-    
-    }
+}
+
 a {
     text-decoration: none;
     color: #2E8B57;
- } 
+} 
   
 a:hover{
     color: #000;
 }
+
 img{
     border-radius: 50%;
     margin-top:1px;
     width: 300px;
-
 }
   
 body>header{
@@ -40,13 +38,12 @@ body>header{
 }
 
 h1{
-    
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 3em;
     font-weight: initial;
-    
 }
+
 section>h2{
     border-bottom-style:ridge;
 }
@@ -55,30 +52,21 @@ main, aside,header{
     max-width: 70ch;
     margin-left: auto;
     margin-right: auto;
-    
-
 }
+
 aside li{
     list-style: square;
-    
 }
 
 .resources{
-  
     padding: 10px 10px;
     background-color: white;
     margin-bottom: 15px;
-    
-    
-
-
 }
 
 .hyf{
-    
     padding: 10px 10px;
     background-color: white;
-
 }
 
 footer{
@@ -90,18 +78,4 @@ footer{
     text-align: center;
     background: #2E8B57;
     font-size: 15px;
-
 }
-    
-    
-    
-
-    
-
-
-    
-
-
-
-
-
