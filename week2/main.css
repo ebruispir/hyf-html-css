@@ -1,0 +1,122 @@
+ html{
+    font-size: 16px;
+    color:#000080;
+    text-align: center; 
+}
+
+header{
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    padding: 2% 2% 2% 2%;
+}
+h2{
+    padding-top: 2%;
+}
+
+img{
+  width: 100%;
+  padding: 0;
+  
+  }
+
+.grid-item{
+    
+    background-color:rgba(44, 130, 201, 0.3);
+    box-shadow: 10px 10px #000080 ;
+    padding: 1%;
+    margin: 1%;
+  }
+  section{
+    margin-left:2%;
+    margin-right:2%;
+    background-color: rgba(103, 128, 159, 0.2);
+  }
+
+
+/*-------grid with float-------*/
+
+#grid-floats  .grid-item{
+    float: left;
+    
+    
+}
+
+/*clearfix*/
+#grid-floats::after {
+    content: "";
+    clear: both;
+    display:block;
+  }
+  
+  
+/*-------grid with flexbox-------*/
+
+
+#grid-flex{
+
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2%;
+}
+
+
+
+/*------ Media Querie for phone -------*/
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 767px) {
+
+    .grid-item{
+        width: 40%;
+    }
+    .grid-item:nth-child(1) {
+        width: 87%;
+  }
+
+    #grid-floats .grid-item {
+      height: 450px;
+    } 
+}
+
+
+/*------ Media Querie for tablets -------*/
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1200px) {
+
+    .grid-item{
+        width:25%;
+    }
+    .grid-item:nth-child(1) {
+        width: 41%;
+    }
+    .grid-item:nth-child(2) {
+        width: 41%;
+    }
+
+  #grid-floats .grid-item {
+      height: 480px;
+    }
+}
+
+/*------ Media Querie for dekstop -------*/
+  
+@media screen 
+  and (min-device-width: 1200px){ 
+
+    .grid-item:nth-child(1){
+    width: 45%;
+    
+  }
+    .grid-item{
+    width: 20%;
+  }
+    #grid-floats .grid-item {
+      height: 700px;
+  }
+    
+} 
